@@ -1,7 +1,7 @@
 FROM kibana:latest
 
-RUN /opt/kibana/bin/kibana plugin --install elasticsearch/marvel/latest
-RUN /opt/kibana/bin/kibana plugin --install elastic/sense/latest
+RUN /opt/kibana/bin/kibana plugin --install elastic/sense/latest \
+  && chown -R kibana:kibana /opt/kibana
 
 EXPOSE 5601
 
