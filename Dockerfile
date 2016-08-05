@@ -1,7 +1,6 @@
 FROM kibana:latest
 
-RUN /opt/kibana/bin/kibana plugin --install elastic/sense/latest \
-  && chown -R kibana:kibana /opt/kibana
+RUN gosu kibana kibana plugin --install elastic/sense/latest
 
 EXPOSE 5601
 
