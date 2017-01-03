@@ -1,7 +1,7 @@
 docker-kibana-sense
 ===================
 
-Kibana with elastic/sense pre-installed, based on the [official Kibana 4.5.4 image][1].
+Kibana with elastic/sense pre-installed, based on the [official Kibana `4` image][1].
 
 For more information, please see the documentation for the [official Kibana image][1], documentation for the [official image][1] should also apply to this image.
 
